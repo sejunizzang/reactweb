@@ -1,26 +1,14 @@
+// src/App.js
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
-import TodoTemplate from './components/TodoTemplate';
-import TodoHead from './components/TodoHead';
-import TodoList from './components/TodoList';
-import TodoCreate from './components/TodoCreate';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background: #e9ecef;
-  }
-`;
+import SignupForm from './SignupForm';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <GlobalStyle />
-      <TodoTemplate>
-        <TodoHead />
-        <TodoList />
-        <TodoCreate />
-      </TodoTemplate>
-    </>
+    <div className="App">
+      <h1>회원가입</h1>
+      <SignupForm />
+    </div>
   );
 }
 
